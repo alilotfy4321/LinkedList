@@ -27,13 +27,12 @@ public:
        if(count==1)return head;
 
         int key=(count/2);
-        int n=0;
-        ListNode* temp=head;   
-        while(temp!=NULL){
-            n++;
-            temp=temp->next;
-            if (n==key) break;
+        ListNode* temp=head;
+        
+        while(key--){
             
+            temp=temp->next;
+
         }
         ListNode* nt=temp;
 
